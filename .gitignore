@@ -1,3 +1,5 @@
+*~
+.ensime*
 lib_managed
 local_lib
 project/boot
