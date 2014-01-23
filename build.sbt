@@ -14,7 +14,7 @@ name := "grizzled-slf4j"
 
 organization := "org.clapper"
 
-version := "1.0.2"
+version := "1.0.3"
 
 licenses := Seq("BSD" -> url("http://software.clapper.org/grizzled-slf4j/license.html"))
 
@@ -22,14 +22,12 @@ homepage := Some(url("http://software.clapper.org/grizzled-slf4j/"))
 
 description := "A Scala-friendly wrapper for the SLF4J logging framework"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 // ---------------------------------------------------------------------------
 // Additional compiler options and plugins
 
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
-
-crossScalaVersions := Seq("2.10.2")
 
 seq(lsSettings :_*)
 
@@ -43,7 +41,8 @@ seq(lsSettings :_*)
 // dependendency
 
 libraryDependencies ++= Seq(
-  "org.slf4j" % "slf4j-api" % "1.7.5"
+  "org.slf4j" % "slf4j-api" % "1.7.5",
+  "org.scalatest" %% "scalatest" % "2.0" % "test"
 )
 
 // ---------------------------------------------------------------------------
